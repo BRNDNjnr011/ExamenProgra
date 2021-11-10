@@ -1,0 +1,1 @@
+print("Se plantea la siguiente situacion")
