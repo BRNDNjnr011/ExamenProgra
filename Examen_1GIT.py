@@ -20,9 +20,17 @@ while True:
 
 if Opcion > 5:
     print("No es una de la opciones")
+if Opcion < 1:
+    print("No es una de la opciones")
 
 if Opcion == 1:
+    print("  ")
     print("Bienvenido CEO")
+    print("La vestimenta propuesta por la empresa para usted es : ")
+    #Se inserta el main y se crea su vestimenta
+    print("Las tareas para el dia de hoy son las siguientes: ")
+    CEO1 = Examen.CEO("CEO de la empresa",1 ,"indefinidas","SI","NO","SI",0.0,2)
+    CEO1.Descripcion()
 
 if Opcion == 2:
     print("Bienvenido SUB_CEO")
