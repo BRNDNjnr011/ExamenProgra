@@ -2,6 +2,7 @@
 A continuacion presentamos el panel de neustra empresa
 """
 import main as Examen
+import main2 as Examen2
 Empresa1 = Examen.Empresa("BJ-CORP_UNITE","UNITE STATE")
 Empresa1.Descripcion()
 #print("------------------EMPRESA-----------------------")
@@ -26,6 +27,8 @@ if Opcion < 1:
 if Opcion == 1:
     print("  ")
     print("Bienvenido CEO")
+    Persona1 = Examen2.Empleado("Brandon J. Juarez Gervacio", 45, 1.60, 60, 100000,20,"Masculino")
+    Persona1.describir()
     print("La vestimenta propuesta por la empresa para usted es : ")
     #Se inserta el main y se crea su vestimenta
     print("Las tareas para el dia de hoy son las siguientes: ")
