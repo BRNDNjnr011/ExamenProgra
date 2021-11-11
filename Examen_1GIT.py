@@ -1,10 +1,13 @@
 """
 A continuacion presentamos el panel de neustra empresa
 """
-print("------------------EMPRESA-----------------------")
-print("_______________BJ-CORP_UNITE___________________")
-print("Seleccione el rango al que pertenece")
-print("CEO-(1)\nSU_CEO-(2)\nGERENTE-(3)\nJEFE DE AREA-(4)\nEMPLEADO-(5)")
+import main as Examen
+Empresa1 = Examen.Empresa("BJ-CORP_UNITE","UNITE STATE")
+Empresa1.Descripcion()
+#print("------------------EMPRESA-----------------------")
+#print("_______________BJ-CORP_UNITE___________________")
+print("SELECCIONE EL RANGO AL QUE PERTENECE")
+print("CEO-(1)\nSUB_CEO-(2)\nGERENTE-(3)\nJEFE DE AREA-(4)\nEMPLEADO-(5)")
 
 while True:
     Opcion = input("Opcion: ")
