@@ -19,7 +19,7 @@ class Puesto:
         print("Numero de identificacion: ", self.Nplaca)
         print("Horas destinadas al trabajo: ", self.HrTrabajo)
 
-
+#Declaración de subclase
 class CEO(Puesto):
     def __init__(self,Cargo, Nplaca, Hrtrabajo, CerrarTrato, Auditoria, Junta, HrAuditoria = None,  HoraDeJunta = None):
         super().__init__(Cargo, Nplaca, Hrtrabajo)
@@ -32,11 +32,11 @@ class CEO(Puesto):
     def Descripcion(self):
         print("  ")
         super().Descripcion()
-        print("Cerra algun trato: ", self.CerrarTrato)
-        print("Alguna AUDITORIA : ", self.Auditoria)
-        print("Hora de la AUDITORIA", self.HrAuditoria, "pm")
-        print("Alguna Junta: ", self.Junta)
-        print(" Hora de la junta: ", self.Hora , "pm")
+        print("Cerrar algun trato: ", self.CerrarTrato)
+        print("Alguna auditoria: ", self.Auditoria)
+        print("Hora de la auditoria: ", self.HrAuditoria, "pm")
+        print("Alguna junta: ", self.Junta)
+        print("Hora de la junta: ", self.Hora , "pm")
 
 class SUBCEO(Empresa):
     pass
