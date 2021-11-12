@@ -122,5 +122,20 @@ class JEFEDEAREA(Puesto):
 
 ###################################################
 
-class EMPLEADO(Empresa):
-    pass
+class EMPLEADO(Puesto):
+    def __init__(self, Cargo, Nplaca, Hrtrabajo ,MantenimientoPreventivo = True):
+        super().__init__(Cargo, Nplaca, Hrtrabajo)
+        self.Mpreventivo = MantenimientoPreventivo
+
+    def Descripcion2(self):
+        super().Descripcion2()
+        if self.Mpreventivo:
+            print("Realizar Mantenimiento Preventivo....")
+        else:
+            print("Realizar Manteniemiento Correctivo...")
+
+
+
+
+
+

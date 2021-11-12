@@ -163,4 +163,15 @@ if Opcion == 4:
 ###################################################
 
 if Opcion == 5:
+    print("  ")
     print("Bienvenido EMPLEADO")
+    Persona5 = Examen2.Empleado("Juan Estrada Romero",22,1.70,10000,3)
+    Persona5.describir()
+    print(" ")
+    print("La vestimenta propuesta por la empresa para usted es : ")
+    Vestimenta8 = Examen3.EMPLEADO("Bota de seguridad industruial", " Corte militar","Si",False)
+    Vestimenta8.Descrip2()
+    print(" ")
+    print("Las tareas para el dia de hoy son las siguientes")
+    EMPLEADO1 = Examen1.EMPLEADO("Empleado", "005", 10)
+    EMPLEADO1.Descripcion2()

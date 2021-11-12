@@ -86,4 +86,21 @@ class JEFEDEAREA(SUBCEO):
 ###################################################
 
 class EMPLEADO(VestimentaEmpresa):
-    pass
+    def __init__(self, TCalzado, TPeinado,Guantes, Formal=True):
+        super().__init__(TCalzado, TPeinado, Formal)
+        self.Guantes = Guantes
+        self.Playera = "Algodon"
+        self.Pantalon = "Algodon"
+        self.Calcetin = "Textil"
+        self.Casco = "Plastico Resistente"
+
+    def Descrip2(self):
+        super().Descrip2()
+        print("Usted usara una playera de : ", self.Playera)
+        print("Usted usara un pantalon de: ", self.Pantalon)
+        print("Usted usara calcetines de tela: ", self.Calcetin)
+        print("Usara un casco de: ", self.Casco)
+
+
+
+
