@@ -69,8 +69,9 @@ class SUBCEO(Puesto):
         print("Dar instrucciones avanzadas al gerente: ", self.AsisGerente)
 
 
-class GERENTE(Empresa):
+class GERENTE(Puesto):
     pass
+
 
 class JEFEDEAREA(Empresa):
     pass
