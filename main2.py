@@ -1,4 +1,9 @@
-#Superclase Persona
+"""
+AQUI INTANCIAMOS LO QUE SON LAS PERSONAS Y SUS CARACTERISTICAS
+
+"""
+###################################################
+
 class Persona:
     def __init__(self, nombre, edad, estatura, genero = "x"):
         self.__nombre = nombre
@@ -18,7 +23,8 @@ class Persona:
     def setNombre(self, value):
         self.__nombre = value
 
-#Declaración de subclase
+###################################################
+
 class Empleado(Persona):
     def __init__(self, nombre, edad, estatura, sueldo, antiguedad, genero = "x"):
         super().__init__(nombre, edad, estatura, genero)

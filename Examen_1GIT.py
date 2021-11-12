@@ -5,6 +5,8 @@ import main as Examen1
 import main2 as Examen2
 import main3 as Examen3
 
+###################################################
+
 Empresa1 = Examen1.Empresa("BJ-CORP_UNITE","UNITE STATE")
 Empresa1.Descripcion()
 #print("------------------EMPRESA-----------------------")
@@ -19,6 +21,8 @@ while True:
         break
     except ValueError:
         print("Por favor ingrese el numero de su rango correctamente")
+
+###################################################
 
 if Opcion == 1:
     print("  ")
@@ -35,6 +39,8 @@ if Opcion == 1:
     print("Las tareas para el dia de hoy son las siguientes")
     CEO1 = Examen1.CEO("CEO de la empresa","001" ,"Indefinidas","Si","No","Si",0,2)
     CEO1.Descripcion()
+
+###################################################
 
 if Opcion == 2:
     print("  ")
@@ -74,13 +80,13 @@ if Opcion == 2:
         SUBCEO2 = Examen1.SUBCEO("SUB_CEO","002","Indefinidas","No","No","Si","Ver el trabajo final","Platica seria",0,)
         SUBCEO2.Descripcion2()
 
+###################################################
 
 if Opcion == 3:
     print("  ")
     print("Bienvenido GERENTE")
     Persona3 = Examen2.Empleado("Alberto Santos Hernandez",35,1.7,50000,20, "Masculino")
     Persona3.describir()
-
     print(" ")
     print("Usted estara en la oficina o visitara la planta")
     print("Oficina-(1)\nPlanta-(2)\n")
@@ -111,11 +117,50 @@ if Opcion == 3:
         Vestimenta5.Descrip2()
         print(" ")
         print("Las tareas para el dia de hoy son las siguientes")
-        GERENTE2 = Examen1.GERENTE("Gerente","003",10,"No","No","Modificar el plan de trabajo","No","Llevar el pago a el Jefe de Area hoy")
+        GERENTE2 = Examen1.GERENTE("Gerente","003",10,"No","No","Modificar el plan de trabajo","No","Llevar el pago hoy")
+        GERENTE2.Descripcion2()
 
+###################################################
 
 if Opcion == 4:
+    print("  ")
     print("Bienvenido JEFE DE AREA")
+    Persona4 = Examen2.Empleado("Mariana Herrera Torres",28,1.58,25000,10,"Mujer")
+    Persona4.describir()
+    print(" ")
+    print("Usted estara en la oficina o visitara la planta")
+    print("Oficina-(1)\nPlanta-(2)\n")
+    while True:
+        Opcion4 = input("Opcion: ")
+        try:
+
+            Opcion4 = int(Opcion4)
+            break
+        except ValueError:
+            print("Escoja la opcion de manera correcta")
+
+    if Opcion4 == 1:
+        print(" ")
+        print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la oficina es la siguiente : ")
+        Vestimenta6 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Zapato casual","Militar","Negro inflamable"," Algodon Negro mesclilla",)
+        Vestimenta6.Descrip2()
+        print(" ")
+        print("Las tareas para el dia de hoy son las siguientes")
+        JEFE1 = Examen1.JEFEDEAREA("Jefe de area","004",12,"No"," 2 Recibos de compra de material","No","7:30")
+        JEFE1.Descripcion()
+
+
+    if Opcion4 == 2:
+        print(" ")
+        print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la planta es la siguiente : ")
+        Vestimenta7 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Bota industrial","Militar","Negro inflamable","Algodon Negro mesclilla inflamable",False)
+        Vestimenta7.Descrip2()
+        print(" ")
+        print("Las tareas para el dia de hoy son las siguientes")
+        JEFE2 = Examen1.JEFEDEAREA("Jefe de area","004",12,"Ir a area de termiando","No","Mostrar el acabado en productos","No")
+        JEFE2.Descripcion2()
+
+###################################################
 
 if Opcion == 5:
     print("Bienvenido EMPLEADO")

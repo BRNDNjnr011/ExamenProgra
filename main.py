@@ -1,3 +1,9 @@
+"""
+AQUI TENEMOS LO QUE ES LA ESTRUCTURA DE LA EMPRESA Y SUS ACCIONES POR PUESTO
+
+"""
+###################################################
+
 class Empresa:
     def __init__(self, Nombre, Ubicacion):
         self.Nombre = Nombre
@@ -7,6 +13,8 @@ class Empresa:
         print("  ")
         print("Nombre: ", self.Nombre)
         print("Ubicacion: ", self.Ubicacion)
+
+###################################################
 
 class Puesto:
     def __init__(self,Cargo, Nplaca, Hrtrabajo):
@@ -26,8 +34,8 @@ class Puesto:
         print("Numero de identificacion: ", self.Nplaca)
         print("Horas destinadas al trabajo: ", self.HrTrabajo)
 
+###################################################
 
-#Declaración de subclase
 class CEO(Puesto):
     def __init__(self,Cargo, Nplaca, Hrtrabajo, CerrarTrato, Auditoria, Junta, HrAuditoria = None,  HoraDeJunta = None):
         super().__init__(Cargo, Nplaca, Hrtrabajo)
@@ -45,6 +53,8 @@ class CEO(Puesto):
         print("Hora de la auditoria: ", self.HrAuditoria, "pm")
         print("Alguna junta: ", self.Junta)
         print("Hora de la junta: ", self.Hora , "pm")
+
+###################################################
 
 class SUBCEO(Puesto):
     def __init__(self,Cargo, Nplaca, Hrtrabajo, ConfirmarCompras, AsistenciaAuditoria, AutorizarContrataciones,RevisarPlanta, AsistirGerente, HrAuditoria = None):
@@ -68,6 +78,7 @@ class SUBCEO(Puesto):
         print("Revisar el trabajo en planta: ", self.RevPlanta)
         print("Dar instrucciones avanzadas al gerente: ", self.AsisGerente)
 
+###################################################
 
 class GERENTE(Puesto):
     def __init__(self, Cargo, Nplaca, Hrtrabajo, Entrevista, SoliEmpleo, InstruJArea, PagosMaterial, SueldoEmpleados):
@@ -89,11 +100,27 @@ class GERENTE(Puesto):
         print("Dar instrucciones a Jefe de area: ", self.Instru)
         print("LLevar el sueldo de los empleados a el Jefe de area: ", self.Sueldos)
 
+###################################################
 
+class JEFEDEAREA(Puesto):
+    def __init__(self, Cargo, Nplaca, Hrtrabajo, Supervisar, Facturar, IntruirEmpleados, PagarEmpleados):
+        super().__init__(Cargo, Nplaca, Hrtrabajo)
+        self.Supervisar = Supervisar
+        self.Facturar = Facturar
+        self.Instruir = IntruirEmpleados
+        self.Pagar = PagarEmpleados
 
+    def Descripcion(self):
+        super().Descripcion()
+        print("Existen recibos por faturar: ", self.Facturar)
+        print("Dar el pago a los empleados: ", self.Pagar, "pm")
 
-class JEFEDEAREA(Empresa):
-    pass
+    def Descripcion2(self):
+        super().Descripcion2()
+        print("Ver como trabajan los empleados: ", self.Supervisar)
+        print("Mostrarles el metodo para realizar las cosas: ", self.Instruir)
+
+###################################################
 
 class EMPLEADO(Empresa):
     pass

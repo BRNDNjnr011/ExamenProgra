@@ -1,3 +1,9 @@
+"""
+AQUI PROPONEMOS LO QUE SON LAS VESTIMENTAS
+
+"""
+###################################################
+
 class VestimentaEmpresa:
     def __init__(self, TCalzado, TPeinado, Formal = True ):
         self.TCalzado = TCalzado
@@ -19,7 +25,8 @@ class VestimentaEmpresa:
             print("--Usted no vestira formal--")
 
 
-#Declaración de subclase
+###################################################
+
 class CEO(VestimentaEmpresa):
     def __init__(self,Saco, PantalonDVestir,Camisa,Corbata, Calcetas,TCalzado, TPeinado, Formal = True):
         super().__init__(TCalzado, TPeinado, Formal)
@@ -37,6 +44,8 @@ class CEO(VestimentaEmpresa):
         print("Usted usara corbata color: ", self.Corbata)
         print("Usted usara calcetas color: ", self.Calcetas)
 
+###################################################
+
 class SUBCEO(CEO):
     def __init__(self, Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB, Formal=True):
         super().__init__(Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Formal)
@@ -53,6 +62,8 @@ class SUBCEO(CEO):
         print("Usted usara corbata color: ", self.Corbata)
         print("Usted debera usar un pantalon de: ", self.PantalonB)
 
+###################################################
+
 class GERENTE(SUBCEO):
     def __init__(self, Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB,Formal=True):
         super().__init__(Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB, Formal)
@@ -63,8 +74,16 @@ class GERENTE(SUBCEO):
     def Descrip2(self):
         super().Descrip2()
 
-class JEFEDEAREA(VestimentaEmpresa):
-    pass
+###################################################
+
+class JEFEDEAREA(SUBCEO):
+    def __init__(self, Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB,Formal=True):
+        super().__init__(Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB, Formal)
+
+    def Descrip2(self):
+        super().Descrip2()
+
+###################################################
 
 class EMPLEADO(VestimentaEmpresa):
     pass
