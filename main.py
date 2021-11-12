@@ -15,9 +15,17 @@ class Puesto:
         self.HrTrabajo = Hrtrabajo
 
     def Descripcion(self):
+        print("Trabajando en oficina...")
         print("Cargo que desempeña: ", self.Cargo)
         print("Numero de identificacion: ", self.Nplaca)
         print("Horas destinadas al trabajo: ", self.HrTrabajo)
+
+    def Descripcion2(self):
+        print("Trabajando en Planta...")
+        print("Cargo que desempeña: ", self.Cargo)
+        print("Numero de identificacion: ", self.Nplaca)
+        print("Horas destinadas al trabajo: ", self.HrTrabajo)
+
 
 #Declaración de subclase
 class CEO(Puesto):
@@ -38,11 +46,51 @@ class CEO(Puesto):
         print("Alguna junta: ", self.Junta)
         print("Hora de la junta: ", self.Hora , "pm")
 
-class SUBCEO(Empresa):
-    pass
+class SUBCEO(Puesto):
+    def __init__(self,Cargo, Nplaca, Hrtrabajo, ConfirmarCompras, AsistenciaAuditoria, AutorizarContrataciones,RevisarPlanta, AsistirGerente, HrAuditoria = None):
+        super().__init__(Cargo, Nplaca, Hrtrabajo)
+        self.Compras = ConfirmarCompras
+        self.AsisAuditoria = AsistenciaAuditoria
+        self.HrAuditoria = HrAuditoria
+        self.RevisionDContra = AutorizarContrataciones
+        self.RevPlanta = RevisarPlanta
+        self.AsisGerente = AsistirGerente
 
-class GERENTE(Empresa):
-    pass
+    def Descripcion(self):
+        super().Descripcion()
+        print("Revisar las compras realizadas: ", self.Compras)
+        print("Asisitir a la auditoria: ",self.AsisAuditoria)
+        print("Hora de la auditoria: ", self.HrAuditoria,"pm")
+
+    def Descripcion2(self):
+        super().Descripcion2()
+        print("Autorizar Contrataciones: ", self.RevisionDContra)
+        print("Revisar el trabajo en planta: ", self.RevPlanta)
+        print("Dar instrucciones avanzadas al gerente: ", self.AsisGerente)
+
+
+class GERENTE(Puesto):
+    def __init__(self, Cargo, Nplaca, Hrtrabajo, Entrevista, SoliEmpleo, InstruJArea, PagosMaterial, SueldoEmpleados):
+        super().__init__(Cargo, Nplaca, Hrtrabajo)
+        self.Entrevista = Entrevista
+        self.SoliEmpleo = SoliEmpleo
+        self.Instru  = InstruJArea
+        self.PagosM = PagosMaterial
+        self.Sueldos = SueldoEmpleados
+
+    def Descripcion(self):
+        super().Descripcion()
+        print("Realizar una entrevista: ", self.Entrevista)
+        print("Revicion de solicitudes de empleo: ", self.SoliEmpleo)
+        print("Realizar algun pago de material: ", self.PagosM)
+
+    def Descripcion2(self):
+        super().Descripcion2()
+        print("Dar instrucciones a Jefe de area: ", self.Instru)
+        print("LLevar el sueldo de los empleados a el Jefe de area: ", self.Sueldos)
+
+
+
 
 class JEFEDEAREA(Empresa):
     pass
