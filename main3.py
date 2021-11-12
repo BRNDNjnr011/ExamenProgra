@@ -53,8 +53,15 @@ class SUBCEO(CEO):
         print("Usted usara corbata color: ", self.Corbata)
         print("Usted debera usar un pantalon de: ", self.PantalonB)
 
-class GERENTE(VestimentaEmpresa):
-    pass
+class GERENTE(SUBCEO):
+    def __init__(self, Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB,Formal=True):
+        super().__init__(Saco, PantalonDVestir, Camisa, Corbata, Calcetas, TCalzado, TPeinado, Chaleco, PantalonB, Formal)
+
+    def Descrip(self):
+        super().Descrip()
+
+    def Descrip2(self):
+        super().Descrip2()
 
 class JEFEDEAREA(VestimentaEmpresa):
     pass

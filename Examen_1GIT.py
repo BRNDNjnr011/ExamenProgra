@@ -76,7 +76,43 @@ if Opcion == 2:
 
 
 if Opcion == 3:
+    print("  ")
     print("Bienvenido GERENTE")
+    Persona3 = Examen2.Empleado("Alberto Santos Hernandez",35,1.7,50000,20, "Masculino")
+    Persona3.describir()
+
+    print(" ")
+    print("Usted estara en la oficina o visitara la planta")
+    print("Oficina-(1)\nPlanta-(2)\n")
+    while True:
+        Opcion3 = input("Opcion: ")
+        try:
+
+            Opcion3 = int(Opcion3)
+            break
+        except ValueError:
+            print("Escoja la opcion de manera correcta")
+
+    if Opcion3 == 1:
+        print(" ")
+        print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la oficina es la siguiente : ")
+        Vestimenta4 = Examen3.GERENTE("Negro de tres botones","Negro de mesclilla","blanca","Vino","Negras","Zapato casual","Corte militar","no","no")
+        Vestimenta4.Descrip()
+        print(" ")
+        print("Las tareas para el dia de hoy son las siguientes")
+        GERENTE1 = Examen1.GERENTE("Gerente","003",10,"Si una pendiente","4 solicitudes","No","Si","No")
+        GERENTE1.Descripcion()
+
+
+    if Opcion3 == 2:
+        print(" ")
+        print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la planta es la siguiente : ")
+        Vestimenta5 = Examen3.GERENTE("No","No","Blanca no inflamable","Vino","Negras","Botas industriales","Corte militar","Negro inflamable","Negro de algodon",False)
+        Vestimenta5.Descrip2()
+        print(" ")
+        print("Las tareas para el dia de hoy son las siguientes")
+        GERENTE2 = Examen1.GERENTE("Gerente","003",10,"No","No","Modificar el plan de trabajo","No","Llevar el pago a el Jefe de Area hoy")
+
 
 if Opcion == 4:
     print("Bienvenido JEFE DE AREA")

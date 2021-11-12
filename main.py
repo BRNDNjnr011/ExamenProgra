@@ -69,8 +69,28 @@ class SUBCEO(Puesto):
         print("Dar instrucciones avanzadas al gerente: ", self.AsisGerente)
 
 
-class GERENTE(Empresa):
-    pass
+class GERENTE(Puesto):
+    def __init__(self, Cargo, Nplaca, Hrtrabajo, Entrevista, SoliEmpleo, InstruJArea, PagosMaterial, SueldoEmpleados):
+        super().__init__(Cargo, Nplaca, Hrtrabajo)
+        self.Entrevista = Entrevista
+        self.SoliEmpleo = SoliEmpleo
+        self.Instru  = InstruJArea
+        self.PagosM = PagosMaterial
+        self.Sueldos = SueldoEmpleados
+
+    def Descripcion(self):
+        super().Descripcion()
+        print("Realizar una entrevista: ", self.Entrevista)
+        print("Revicion de solicitudes de empleo: ", self.SoliEmpleo)
+        print("Realizar algun pago de material: ", self.PagosM)
+
+    def Descripcion2(self):
+        super().Descripcion2()
+        print("Dar instrucciones a Jefe de area: ", self.Instru)
+        print("LLevar el sueldo de los empleados a el Jefe de area: ", self.Sueldos)
+
+
+
 
 class JEFEDEAREA(Empresa):
     pass
