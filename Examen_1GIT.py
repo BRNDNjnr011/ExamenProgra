@@ -73,7 +73,7 @@ if Opcion == 2:
     if Opcion2 == 2:
         print(" ")
         print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la planta es la siguiente : ")
-        Vestimenta3 = Examen3.SUBCEO("no","no","Blanco","Azul","Negro","Bota industrial","Pelo corto casual","Negro no inflamable","Algodon no inflamable",False)
+        Vestimenta3 = Examen3.SUBCEO("no","no","Blanco","Azul","Negro","Bota industrial","Pelo corto casual","Negro de algodon","Algodon",False)
         Vestimenta3.Descrip2()
         print(" ")
         print("Las tareas para el dia de hoy son las siguientes")
@@ -113,7 +113,7 @@ if Opcion == 3:
     if Opcion3 == 2:
         print(" ")
         print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la planta es la siguiente : ")
-        Vestimenta5 = Examen3.GERENTE("No","No","Blanca no inflamable","Vino","Negras","Botas industriales","Corte militar","Negro inflamable","Negro de algodon",False)
+        Vestimenta5 = Examen3.GERENTE("No","No","Blanca no inflamable","Vino","Negras","Botas industriales","Corte militar","Negro de algodon","Negro textil",False)
         Vestimenta5.Descrip2()
         print(" ")
         print("Las tareas para el dia de hoy son las siguientes")
@@ -142,7 +142,7 @@ if Opcion == 4:
     if Opcion4 == 1:
         print(" ")
         print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la oficina es la siguiente : ")
-        Vestimenta6 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Zapato casual","Militar","Negro inflamable"," Algodon Negro mesclilla",)
+        Vestimenta6 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Zapato casual","Militar","Negro"," Algodon Negro mesclilla",)
         Vestimenta6.Descrip2()
         print(" ")
         print("Las tareas para el dia de hoy son las siguientes")
@@ -153,7 +153,7 @@ if Opcion == 4:
     if Opcion4 == 2:
         print(" ")
         print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la planta es la siguiente : ")
-        Vestimenta7 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Bota industrial","Militar","Negro inflamable","Algodon Negro mesclilla inflamable",False)
+        Vestimenta7 = Examen3.JEFEDEAREA("No","No","Blanca manga corta","Cafe","Negras","Bota industrial","Militar","Negro de algodon","Algodon Negro mesclilla ",False)
         Vestimenta7.Descrip2()
         print(" ")
         print("Las tareas para el dia de hoy son las siguientes")
