@@ -141,6 +141,7 @@ if Opcion == 3:
             ENTREVISTADOR_1 = Examen1.Puesto("Gerente","003",10)
             ENTREVISTADOR_1.DescripcionE()
             print(" ")
+            myList = []
             print("Bueno ya hable de mi, ahora es tu turno")
             a = str(input("¿Cuál es tu nombre?:\n"))
             b = str(input("¿Qué edad tienes?:\n"))
@@ -153,6 +154,8 @@ if Opcion == 3:
             i = str(input("¿Consideras que tu desempeño  individual es bueno?:\n"))
             j = str(input("¿Sabes liderar?:\n"))
             k = str(input("¿Porque quieres trabajar aqui?:\n"))
+            myList = [a,b,c,d,e,f,g,h,i,j,k]
+
             print(" ")
             print(" OK muy bien te tendremos en cosideracion revisare con mas detenimiento tu curriculum\ny si todo sale bien nosotros te llamamos")
             print("Un gusto asta luego ", a)
@@ -185,13 +188,26 @@ if Opcion == 3:
                         print("Escoja la opcion de manera correcta")
 
                 if OpcionC == 1:
-                    print(" Los datos se pasaran al sistema principal para poder ser añadidos")
+                    print(" ")
+                    print("-Se le enviara un correo notificando que fue aceptado-")
+                    print(" ")
+                    print("Datos recopilados")
+                    print(myList)
+                    print("Los datos se pasaran al sistema principal para añadirlo luego de que el reconfirme que acepta estar con nostros")
+                    print("El dia de mañana si todo sale bien podra ver al nuevo empleado en el sistema")
+                    print("Le mostraremos su tarea siguiente....")
 
                 if OpcionC == 2:
+                    print(" ")
                     print("Le mostraremos su tarea siguiente....")
 
             if OpcionCu == 2:
+                print(" ")
                 print("Le mostraremos su tarea siguiente....")
+
+        if OpcionE == 2:
+            print(" ")
+            print("Le mostraremos su tarea siguiente....")
 
     if Opcion3 == 2:
         print(" ")
