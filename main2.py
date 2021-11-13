@@ -44,3 +44,16 @@ class Empleado(Persona):
     def desribir2(self):
         super().describir2()
         print("Mi tiempo en esta empresa es de: ", self.__antiguedad, "Años")
+
+    def describirCu(self):
+        pass
+
+class Profesion(Empleado):
+    def __init__(self, nombre, edad, estatura, peso, empleo, sueldo, antiguedad, genero = "x"):
+        super().__init__(nombre, edad, estatura, peso, sueldo, antiguedad, genero)
+        self.__empleo = empleo
+
+    def describirCu(self):
+        super().describirCu()
+        print("Antigua profecion: ", self.__empleo)
+

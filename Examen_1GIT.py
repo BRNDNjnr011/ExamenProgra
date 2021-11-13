@@ -134,6 +134,7 @@ if Opcion == 3:
             print("Entrando a  oficina.......")
             print("Empieza la conversacion")
             print("  ")
+            print("----------------------------------------------------------------------")
             print(" Hola! un gusto yo soy: ")
             ENTREVISTADOR1 = Examen2.Empleado("Alberto Santos Hernandez",35,1.7,50000,20, "Masculino")
             ENTREVISTADOR1.desribir2()
@@ -142,11 +143,55 @@ if Opcion == 3:
             print(" ")
             print("Bueno ya hable de mi, ahora es tu turno")
             a = str(input("¿Cuál es tu nombre?:\n"))
-            b = int(input("¿Qué edad tienes?:\n"))
-            myDic.update({a: b})
+            b = str(input("¿Qué edad tienes?:\n"))
+            c = str(input("¿Tienes antecedentes en otra empresa?:\n"))
+            d = str(input("¿Te desempeñas bien realizado mantenimiento correctivo?:\n"))
+            e = str(input("¿Te desempeñas bien realizado mantenimiento preventivo?:\n"))
+            f = str(input("¿Tienes las habilidades necesarias?:\n"))
+            g = str(input("¿Tienes problema con portar uniforme?:\n"))
+            h = str(input("¿Trabajas bien en equipo?:\n"))
+            i = str(input("¿Consideras que tu desempeño  individual es bueno?:\n"))
+            j = str(input("¿Sabes liderar?:\n"))
+            k = str(input("¿Porque quieres trabajar aqui?:\n"))
+            print(" ")
+            print(" OK muy bien te tendremos en cosideracion revisare con mas detenimiento tu curriculum\ny si todo sale bien nosotros te llamamos")
+            print("Un gusto asta luego ", a)
+            print("----------------------------------------------------------------------")
+            print("Ingresando al sistema...")
+            print("Revisar el Curriculum")
+            print("Si-(1)\nNo-(2)\n")
+            while True:
+                OpcionCu = input("Opcion: ")
+                try:
+
+                    OpcionCu = int(OpcionCu)
+                    break
+                except ValueError:
+                    print("Escoja la opcion de manera correcta")
 
 
+            if OpcionCu == 1:
 
+                print("Curriculum revisado...")
+                print("¿Usted desea contrartarlo?")
+                print("Si-(1)\nNo-(2)\n")
+                while True:
+                    OpcionC = input("Opcion: ")
+                    try:
+
+                        OpcionC = int(OpcionC)
+                        break
+                    except ValueError:
+                        print("Escoja la opcion de manera correcta")
+
+                if OpcionC == 1:
+                    print(" Los datos se pasaran al sistema principal para poder ser añadidos")
+
+                if OpcionC == 2:
+                    print("Le mostraremos su tarea siguiente....")
+
+            if OpcionCu == 2:
+                print("Le mostraremos su tarea siguiente....")
 
     if Opcion3 == 2:
         print(" ")
