@@ -22,6 +22,11 @@ while True:
     except ValueError:
         print("Por favor ingrese el numero de su rango correctamente")
 
+if Opcion > 5:
+    print("****Error digite su numero correctamente****")
+if Opcion <= 0:
+    print("***Error digite su numero correctamente***")
+
 ###################################################
 
 if Opcion == 1:
@@ -59,6 +64,11 @@ if Opcion == 2:
             break
         except ValueError:
             print("Escoja la opcion de manera correcta")
+
+    if Opcion2 > 2:
+        print("****Error digite su numero correctamente****")
+    if Opcion2 <= 0:
+        print("***Error digite su numero correctamente***")
 
     if Opcion2 == 1:
         print(" ")
@@ -108,6 +118,34 @@ if Opcion == 3:
         print("Las tareas para el dia de hoy son las siguientes")
         GERENTE1 = Examen1.GERENTE("Gerente","003",10,"Si una pendiente","4 solicitudes","No","Si","No")
         GERENTE1.Descripcion()
+        print(" ")
+        print("Pimera tarea del dia entrevistar al solicitante")
+        print("Entrevistar-(1)\nNo entrevistar-(2)\n")
+        while True:
+            OpcionE = input("Opcion: ")
+            try:
+
+                OpcionE = int(OpcionE)
+                break
+            except ValueError:
+                print("Escoja la opcion de manera correcta")
+
+        if OpcionE == 1:
+            print("Entrando a  oficina.......")
+            print("Empieza la conversacion")
+            print("  ")
+            print(" Hola! un gusto yo soy: ")
+            ENTREVISTADOR1 = Examen2.Empleado("Alberto Santos Hernandez",35,1.7,50000,20, "Masculino")
+            ENTREVISTADOR1.desribir2()
+            ENTREVISTADOR_1 = Examen1.Puesto("Gerente","003",10)
+            ENTREVISTADOR_1.DescripcionE()
+            print(" ")
+            print("Bueno ya hable de mi, ahora es tu turno")
+            a = str(input("¿Cuál es tu nombre?:\n"))
+            b = int(input("¿Qué edad tienes?:\n"))
+            myDic.update({a: b})
+
+
 
 
     if Opcion3 == 2:
@@ -119,6 +157,7 @@ if Opcion == 3:
         print("Las tareas para el dia de hoy son las siguientes")
         GERENTE2 = Examen1.GERENTE("Gerente","003",10,"No","No","Modificar el plan de trabajo","No","Llevar el pago hoy")
         GERENTE2.Descripcion2()
+
 
 ###################################################
 

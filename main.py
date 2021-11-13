@@ -34,6 +34,12 @@ class Puesto:
         print("Numero de identificacion: ", self.Nplaca)
         print("Horas destinadas al trabajo: ", self.HrTrabajo)
 
+    def DescripcionE(self):
+        print("Cargo que desempeño es : ", self.Cargo)
+        print("Mi numero de identificacion: ", self.Nplaca)
+        print("Las horas que destino al trabajo son : ", self.HrTrabajo)
+        print("Puedes encontrarme en la oficina o en la planta")
+
 ###################################################
 
 class CEO(Puesto):

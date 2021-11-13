@@ -19,6 +19,11 @@ class Persona:
         print("Edad:", self.__edad, "Años")
         print("Estatura:", self.__estatura, "mt")
 
+    def describir2(self):
+        print(" ")
+        print(self.__nombre)
+        print("Tengo: ", self.__edad, "Años")
+
 
     def setNombre(self, value):
         self.__nombre = value
@@ -35,3 +40,7 @@ class Empleado(Persona):
         super().describir()
         print("Sueldo:", self.__sueldo, "$")
         print("Antigûedad:", self.__antiguedad, "Años")
+
+    def desribir2(self):
+        super().describir2()
+        print("Mi tiempo en esta empresa es de: ", self.__antiguedad, "Años")
