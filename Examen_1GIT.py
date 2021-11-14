@@ -144,7 +144,7 @@ if Opcion == 3:
             print("Empieza la conversacion")
             print("  ")
             print("----------------------------------------------------------------------")
-            print(" Hola! un gusto yo soy: ")
+            print("Hola! un gusto yo soy: ")
             ENTREVISTADOR1 = Examen2.Empleado("Alberto Santos Hernandez",35,1.7,50000,20, "Masculino")
             ENTREVISTADOR1.desribir2()
             ENTREVISTADOR_1 = Examen1.Puesto("Gerente","003",10)
