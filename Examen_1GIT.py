@@ -17,8 +17,8 @@ print("CEO-(1)\nSUB_CEO-(2)\nGERENTE-(3)\nJEFE DE AREA-(4)\nEMPLEADO-(5)")
 while True:
     Opcion = input("Opcion: ")
     try:
-        Opcion = int(Opcion)
-        break
+         Opcion = int(Opcion)
+         break
     except ValueError:
         print("Por favor ingrese el numero de su rango correctamente")
 
@@ -26,7 +26,6 @@ if Opcion > 5:
     print("****Error digite su numero correctamente****")
 if Opcion <= 0:
     print("***Error digite su numero correctamente***")
-
 ###################################################
 
 if Opcion == 1:
@@ -109,6 +108,11 @@ if Opcion == 3:
         except ValueError:
             print("Escoja la opcion de manera correcta")
 
+    if Opcion3 > 2:
+        print("****Error digite su numero correctamente****")
+    if Opcion3 <= 0:
+        print("***Error digite su numero correctamente***")
+
     if Opcion3 == 1:
         print(" ")
         print("La vestimenta propuesta por la empresa para que usted\neste trabajando en la oficina es la siguiente : ")
@@ -129,6 +133,11 @@ if Opcion == 3:
                 break
             except ValueError:
                 print("Escoja la opcion de manera correcta")
+
+        if OpcionE > 2:
+            print("****Error digite su numero correctamente****")
+        if OpcionE <= 0:
+            print("***Error digite su numero correctamente***")
 
         if OpcionE == 1:
             print("Entrando a  oficina.......")
@@ -172,6 +181,11 @@ if Opcion == 3:
                 except ValueError:
                     print("Escoja la opcion de manera correcta")
 
+            if OpcionCu > 2:
+                print("****Error digite su numero correctamente****")
+            if OpcionCu <= 0:
+                print("***Error digite su numero correctamente***")
+
 
             if OpcionCu == 1:
 
@@ -186,6 +200,11 @@ if Opcion == 3:
                         break
                     except ValueError:
                         print("Escoja la opcion de manera correcta")
+
+                if OpcionC > 2:
+                    print("****Error digite su numero correctamente****")
+                if OpcionC <= 0:
+                    print("***Error digite su numero correctamente***")
 
                 if OpcionC == 1:
                     print(" ")
@@ -238,6 +257,11 @@ if Opcion == 4:
             break
         except ValueError:
             print("Escoja la opcion de manera correcta")
+
+    if Opcion4 > 2:
+        print("****Error digite su numero correctamente****")
+    if Opcion4 <= 0:
+        print("***Error digite su numero correctamente***")
 
     if Opcion4 == 1:
         print(" ")
